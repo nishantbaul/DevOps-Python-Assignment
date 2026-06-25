@@ -1,0 +1,9 @@
+file = open("sample.txt", "w")
+
+file.write("Hello, World!\n")
+file.write("This is a text file created using Python.\n")
+file.write("Learning file handling is easy.")
+
+file.close()
+
+print("Content written successfully.")
