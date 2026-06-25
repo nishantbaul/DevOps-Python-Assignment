@@ -1,0 +1,18 @@
+students = {}
+
+name = input("Enter student name: ")
+grade = input("Enter student grade: ")
+students[name] = grade
+
+update_name = input("Enter student name to update: ")
+
+if update_name in students:
+    new_grade = input("Enter new grade: ")
+    students[update_name] = new_grade
+    print("Grade updated successfully.")
+else:
+    print("Student not found.")
+
+print("\nStudent Grades:")
+for name, grade in students.items():
+    print(name, ":", grade)
